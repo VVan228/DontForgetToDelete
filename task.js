@@ -1,5 +1,5 @@
 let date = new Date();
-date.setHours(date.getHours()+8)
+date.setHours(date.getHours()+8)//UTS+8))
 let newYearDate = new Date(0);
 newYearDate.setFullYear(date.getFullYear()+1);
 
