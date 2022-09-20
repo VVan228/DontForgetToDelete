@@ -1,8 +1,7 @@
-let time = getTimeBeforeNY();
+let time = getTimeBeforeNY(new Date());
 console.log("До нового года осталось " + time[0] + " дней, " + time[1] + " часов и " + time[2] + " минут!");
 
-function getTimeBeforeNY(){
-    let date = new Date();
+function getTimeBeforeNY(date: Date) : number[]{
     date.setHours(date.getHours()+8)//UTF+8))
     let newYearDate = new Date(0);
     newYearDate.setFullYear(date.getFullYear()+1);
